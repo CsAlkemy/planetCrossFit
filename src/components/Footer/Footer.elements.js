@@ -135,9 +135,9 @@ export const SocialMediaWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
-  margin: 40px auto 0 auto;
+  margin: 30px auto 0 auto;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -162,13 +162,19 @@ export const SocialIcon = styled(FaMagento)`
 export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 600px) {
+    margin-top:16px;
+    margin-bottom:16px;
+  }
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 150px;
+  margin-right:20px;
 `;
 
 export const SocialIconLink = styled.a`

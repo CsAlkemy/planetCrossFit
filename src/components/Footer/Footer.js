@@ -1,12 +1,15 @@
 import React from "react";
 import { Button } from "../../globalStyles";
 import LevelOne from "../../images/crossfit-level.png";
+import Logo from "../../images/logo-planet-crossfit.png";
+
+import { FiMapPin, FiMail } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+
 import {
   FaFacebook,
   FaInstagram,
-  FaYoutube,
   FaTwitter,
-  FaLinkedin,
 } from "react-icons/fa";
 import {
   FooterContainer,
@@ -18,12 +21,8 @@ import {
   FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinkItems,
-  FooterLinkTitle,
-  FooterLink,
   SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
-  SocialIcon,
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
@@ -31,6 +30,7 @@ import {
 import { Link } from "gatsby";
 
 function Footer() {
+  var gapiLink = "https://g.page/planetcrossfit?share";
   return (
     <FooterContainer>
       <FooterSubscription>
@@ -40,7 +40,7 @@ function Footer() {
         <Form>
           <FormCheckBox className="checkbox">
             <input type="checkbox" required />
-            &nbsp; Acepto la <Link to='/policy'> Política de privacidad</Link>
+            &nbsp; Acepto la <Link to="/policy" className='linkText'> Política de privacidad</Link>
           </FormCheckBox>
           <FormInput
             name="email"
@@ -52,65 +52,81 @@ function Footer() {
           <Button fontBig>Apúntate gratis</Button>
         </Form>
       </FooterSubscription>
-
-      <div className='columns'>
-        <div className="column"></div>
-
-      </div>
       <FooterLinksContainer>
         <FooterLinksWrapper>
           <FooterLinkItems>
-            <figure className='image'>
+            <figure className="image">
+              <img src={Logo} alt="nivel logoo uno"></img>
+            </figure>
+            <figure className="image">
               <img src={LevelOne} alt="nivel certificado uno"></img>
             </figure>
           </FooterLinkItems>
         </FooterLinksWrapper>
         <FooterLinksWrapper>
-          <FooterLinkItems>
-            <FooterLinkTitle>Videos</FooterLinkTitle>
-            <FooterLink to="/">Submit Video</FooterLink>
-            <FooterLink to="/">Ambassadors</FooterLink>
-            <FooterLink to="/">Agency</FooterLink>
-            <FooterLink to="/">Influencer</FooterLink>
-          </FooterLinkItems>
-          <FooterLinkItems>
-            <FooterLinkTitle>Social Media</FooterLinkTitle>
-            <FooterLink to="/">Instagram</FooterLink>
-            <FooterLink to="/">Facebook</FooterLink>
-            <FooterLink to="/">Youtube</FooterLink>
-            <FooterLink to="/">Twitter</FooterLink>
-          </FooterLinkItems>
+          <FooterLinkItems className="is-1"></FooterLinkItems>
+          <div>
+            <p className="mt-5 is-6 has-text-white is-mobile-full">
+              Puedes ponerte en contacto con nuestro box de crossfit aquí:
+            </p>
+            <div className="footerAddress mt-2">
+              <a
+                className="has-text-white mt-1"
+                href={gapiLink}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FiMapPin />
+                &nbsp; Dirección:{" "}
+                <span className="textLink">
+                  {" "}
+                  9 Carrer Barranc de Xiva, Picaña, Comunidad Valenciana
+                </span>
+              </a>
+              <a
+                className="has-text-white mt-1"
+                href="https://wa.link/ge8jru"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FaWhatsapp />
+                &nbsp; Sólo Whatsapp:{" "}
+                <span className="textLink"> 644561296</span>
+              </a>
+              <a
+                className="has-text-white mt-1"
+                href="mailto:info@planetcrossfit.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FiMail />
+                &nbsp; Email:{" "}
+                <span className="textLink"> info@planetcrossfit.com</span>
+              </a>
+            </div>
+          </div>
+          <FooterLinkItems className="is-1"></FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>
       <SocialMedia>
         <SocialMediaWrap>
-          <SocialLogo to="/">
-            <SocialIcon />
-            ULTRA
-          </SocialLogo>
-          <WebsiteRights>ULTRA © 2020</WebsiteRights>
+          <WebsiteRights className='FooterPolicy'>
+            <div className="FooterPolicy">
+              <Link to='/' className="textLink"> Aviso legal</Link>
+              <Link  to='/' className="textLink ml-2"> -Política de privacidad</Link>
+              <Link to='/' className="textLink ml-2"> -Condiciones de contratación</Link>
+            </div>
+          </WebsiteRights>
+          <WebsiteRights>© 2020, Planet Crossfit.</WebsiteRights>
           <SocialIcons>
-            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+            <SocialIconLink href="https://www.facebook.com/planetcrossfitbox" target="_blank" className='textLink' aria-label="Facebook">
               <FaFacebook />
             </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+            <SocialIconLink href="https://www.instagram.com/planet_crossfit/" target="_blank" className='textLink' aria-label="Instagram">
               <FaInstagram />
             </SocialIconLink>
-            <SocialIconLink
-              href={
-                "//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
-              }
-              rel="noopener noreferrer"
-              target="_blank"
-              aria-label="Youtube"
-            >
-              <FaYoutube />
-            </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+            <SocialIconLink href="https://twitter.com/Planet_Crossfit" target="_blank" className='textLink' aria-label="Twitter">
               <FaTwitter />
-            </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
-              <FaLinkedin />
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>

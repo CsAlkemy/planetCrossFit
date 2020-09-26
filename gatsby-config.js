@@ -39,6 +39,20 @@ module.exports = {
     `gatsby-plugin-sass`,
 
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `Lucida Grande`,
+          `Lucida Sans Unicode`,
+          `Trebuchet MS`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
+
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-XXXXXXXX-X",

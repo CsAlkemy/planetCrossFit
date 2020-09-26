@@ -19,6 +19,34 @@
 	margin-top: 55px;
 }
 
+.footerAddress{
+	display: flex;
+	flex-direction: column;
+}
+
+.FooterPolicy{
+	display: flex;
+	flex-direction: row;
+}
+
+.textLink{
+	color: white;
+}
+.textLink:hover{
+	color: #2980b9;
+}
+
+.linkText{
+	color: #2980b9;
+}
+.linkText:hover{
+	color: #52a7e0;
+}
+
+
+
+
+
 .footer {
 	display: flex;
 	padding: 1.5rem 1.5rem;
@@ -31,3 +59,9 @@
 		color: $secondary-color;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.FooterPolicy {
+	  margin-left: 25px;
+	}
+  }
