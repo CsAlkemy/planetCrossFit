@@ -49,7 +49,7 @@ function Navbar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/Schedule" onClick={closeMobileMenu}>
+                <NavLinks to="/schedule" onClick={closeMobileMenu}>
                   Horarios
                 </NavLinks>
               </NavItem>
@@ -59,7 +59,7 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/reservation" onClick={closeMobileMenu}>
+                <NavLinks to="https://planet.wodbuster.com/account/login.aspx?ReturnUrl=%2Fuser%2F" target="_blank" rel="norefferal" onClick={closeMobileMenu}>
                   Reservar
                 </NavLinks>
               </NavItem>

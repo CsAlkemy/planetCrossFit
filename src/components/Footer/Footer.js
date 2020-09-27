@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../../globalStyles";
 import LevelOne from "../../images/crossfit-level.png";
 import Logo from "../../images/logo-planet-crossfit.png";
 
@@ -13,11 +12,6 @@ import {
 } from "react-icons/fa";
 import {
   FooterContainer,
-  FooterSubscription,
-  FooterSubHeading,
-  Form,
-  FormCheckBox,
-  FormInput,
   FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinkItems,
@@ -28,30 +22,13 @@ import {
   SocialIconLink,
 } from "./Footer.elements";
 import { Link } from "gatsby";
+import Subs from "../Subscription";
 
 function Footer() {
   var gapiLink = "https://g.page/planetcrossfit?share";
   return (
     <FooterContainer>
-      <FooterSubscription>
-        <FooterSubHeading>
-          ¿QUIERES PROBAR UN DÍA TOTALMENTE GRATIS?
-        </FooterSubHeading>
-        <Form>
-          <FormCheckBox className="checkbox">
-            <input type="checkbox" required />
-            &nbsp; Acepto la <Link to="/policy" className='linkText'> Política de privacidad</Link>
-          </FormCheckBox>
-          <FormInput
-            name="email"
-            required
-            type="email"
-            placeholder="Tu correo electrónico:"
-          />
-
-          <Button fontBig>Apúntate gratis</Button>
-        </Form>
-      </FooterSubscription>
+      <Subs />
       <FooterLinksContainer>
         <FooterLinksWrapper>
           <FooterLinkItems>
