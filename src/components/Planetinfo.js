@@ -11,9 +11,9 @@ function Planetinfo() {
     <section className="hero is-large InfoHero">
       <div className="hero-body py-6 MarginBottom">
         <div className="container">
-          <div className="Points">
+          <div className="Points mb-6 mt-6">
             <h1 className="title customText has-text-white has-text-centered">
-              PLANET CROSSFIT, tu Box de CrossFit en Valencia
+              PLANET CROSSFIT, tu Box de CrossFit<br/> en Valencia
             </h1>
             <p className="title is-4 has-text-white has-text-centered MarginTop">
               ¿POR QUÉ PRACTICAR CROSSFIT?
@@ -50,7 +50,7 @@ function Planetinfo() {
               </li>
             </ol>
           </div>
-          <div className="columns mt-6">
+          <div className="columns mt-6 mb-6">
             <div className="column is-mobile">
               <figure className="image is-96x96 SvgColor">
                 <img className="SvgColor" alt="bike" src={Bike}></img>

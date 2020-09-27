@@ -15,15 +15,16 @@
 	align-items: center;
 }
 
-.customImage{
+.customImage {
 	margin-top: 55px;
 }
-.customText{
+
+.customText {
 	font-size: 60px;
 }
 
-.hero-container{
-	background: url('../images/planet_crossfit_slide-scaled.jpg') center center/cover no-repeat ;
+.hero-container {
+	background: url('../images/planet_crossfit_slide-scaled.jpg') center center/cover no-repeat;
 	height: 85vh;
 	width: 100%;
 	display: flex;
@@ -32,83 +33,114 @@
 	object-fit: contain;
 }
 
-.hero-container > h1{
+.hero-container>h1 {
 	color: #ffffff;
 	font-size: 90px;
 	margin-left: 100px;
 	margin-top: 100px;
 }
 
-.heroButton{
+.heroButton {
 	margin-left: 100px;
 }
 
-.InfoHero{
+.InfoHero {
 	background: #101522;
 	align-items: center;
 	padding: 0px;
 }
-.Points{
-	width: 90%;
+
+.primary {
+	background: #101522;
 }
-.CustomMargin{
+
+.CustomMargin {
 	width: 50%;
 	margin: auto;
 	list-style-type: square;
 }
 
-.SvgColor{
+.SvgColor {
 	margin: auto;
 }
 
-.MarginTop{
+.MarginTop {
 	margin-top: 70px;
 }
 
-.MarginBottom{
+.MarginBottom {
 	margin-bottom: 70px;
 }
 
 
 
-.footerAddress{
+.footerAddress {
 	display: flex;
 	flex-direction: column;
 }
 
-.FooterPolicy{
+.FooterPolicy {
 	display: flex;
 	flex-direction: row;
 }
 
-.textLink{
+.textLink {
 	color: white;
 }
-.textLink:hover{
+
+.textLink:hover {
 	color: #2980b9;
 }
 
-.linkText{
+.ColRemPadd {
+	padding-left: 0px;
+}
+
+.card {
+	height: 100%;
+}
+
+.linkText {
 	color: #2980b9;
 }
-.linkText:hover{
+
+.linkText:hover {
 	color: #52a7e0;
 }
+
 .footer {
 	display: flex;
 	padding: 1.5rem 1.5rem;
 	line-height: 1.5rem;
+
 	a {
 		border-bottom: 1px solid;
 		color: black;
 	}
+
 	a:hover {
 		color: $secondary-color;
 	}
 }
 
+.ELCross {
+	margin-top: 20px;
+	width: 95%;
+}
+
+.setWeidth {
+	width: 95%;
+}
+
+@media only screen and (max-width: 992px) {
+	.ELCross {
+		font-size: 32px;
+	}
+
+}
+
 @media only screen and (max-width: 820px) {
-	.CustomMargin{
+	.CustomMargin {
 		width: 90%;
 		margin: auto;
 	}
@@ -117,18 +149,25 @@
 
 @media only screen and (max-width: 600px) {
 	.FooterPolicy {
-	  margin-left: 25px;
+		margin-left: 25px;
 	}
-	.hero-container > h1{
+
+	.hero-container>h1 {
 		font-size: 55px;
 		margin-left: 30px;
-	  }
-	.hero-container{
+	}
+
+	.hero-container {
 		height: 65vh;
 		align-items: center;
 		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 	}
-	.heroButton{
+
+	.heroButton {
 		margin-left: 0px;
 	}
-  }
+
+	.customText {
+		font-size: 40px;
+	}
+}
