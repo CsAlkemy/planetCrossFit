@@ -53,6 +53,14 @@ module.exports = {
     },
 
     {
+      resolve: 'gatsby-source-googlemaps-geocoding',
+      options: {
+        key: 'AIzaSyDXlNM4ZePi7xLfF7QjmTEqkqxwOfc0R3Y',
+        address: 'Carrer Barranc de Xiva 6-9 Polígono, Avinguda Alqueria de Moret, 46210, Valencia'
+      },
+    },
+
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-XXXXXXXX-X",

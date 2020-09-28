@@ -9,7 +9,7 @@ import TestiThree from './Testimonial/TrstiThree';
 function Testimonial() {
   return (
     <section className="hero is-large primary">
-      <div className="hero-body py-6 MarginBottom">
+      <div className="hero-body py-7 MarginBottom">
         <div className="container">
           <h1 className="title is-2 has-text-white mt-5 has-text-centered">
             TESTIMONIOS
