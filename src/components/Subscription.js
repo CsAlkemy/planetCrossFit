@@ -20,7 +20,7 @@ const Subs = (props) => (
       <FormCheckBox className="checkbox field">
         <input type="checkbox" className='is-checkradio' required />
         &nbsp; Acepto la{" "}
-        <Link to="/policy" className="linkText">
+        <Link to="/" className="linkText">
           {" "}
           Política de privacidad
         </Link>

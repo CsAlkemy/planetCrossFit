@@ -33,6 +33,7 @@ function Navbar() {
   useEffect(() => {
     showButton();
   }, []);
+  var extarnal_link="https://planet.wodbuster.com/account/login.aspx?ReturnUrl=%2Fuser%2F"
 
   return (
     <>
@@ -59,17 +60,17 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="https://planet.wodbuster.com/account/login.aspx?ReturnUrl=%2Fuser%2F" target="_blank" rel="norefferal" onClick={closeMobileMenu}>
+                <NavLinks to={extarnal_link} target="_blank" rel="norefferal" onClick={closeMobileMenu}>
                   Reservar
                 </NavLinks>
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/sign-up">
+                  <NavBtnLink to="/signUp">
                     <Button primary>Pureba Gratis</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/sign-up">
+                  <NavBtnLink to="/signUp">
                     <Button onClick={closeMobileMenu} fontBig primary>
                       Pureba Gratis
                     </Button>
