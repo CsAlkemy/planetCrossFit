@@ -70,7 +70,7 @@ function Navbar() {
                     <Button primary>Pureba Gratis</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/signUp">
+                  <NavBtnLink to="/subs">
                     <Button onClick={closeMobileMenu} fontBig primary>
                       Pureba Gratis
                     </Button>

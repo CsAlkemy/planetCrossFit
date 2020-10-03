@@ -96,8 +96,13 @@
 	padding-left: 0px;
 }
 
+
 .card {
 	height: 100%;
+}
+.buttonCustom{
+	margin-left: 70%;
+	margin-bottom: 20px;
 }
 
 .linkText {
@@ -173,5 +178,9 @@
 
 	.customText {
 		font-size: 40px;
+	}
+	.buttonCustom{
+		margin-left: 30%;
+		margin-bottom: 20px;
 	}
 }
