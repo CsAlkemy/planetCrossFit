@@ -4,6 +4,8 @@
   "version": "1.10.3",
   "author": "Aman Mittal <amandeepmittal@live.com>",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "babel-plugin-styled-components": "^1.11.1",
     "bulma": "^0.9.0",
     "gatsby": "^2.24.2",

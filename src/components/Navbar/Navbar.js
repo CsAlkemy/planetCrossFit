@@ -66,7 +66,7 @@ function Navbar() {
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/signUp">
+                  <NavBtnLink to="/subs">
                     <Button primary>Pureba Gratis</Button>
                   </NavBtnLink>
                 ) : (
