@@ -61,7 +61,7 @@ export default function SimpleTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" className="py-3">
         <Tabs
           value={value}
           onChange={handleChange}

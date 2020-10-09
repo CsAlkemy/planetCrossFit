@@ -89,9 +89,9 @@ function Footer() {
         <SocialMediaWrap>
           <WebsiteRights className='FooterPolicy'>
             <div className="FooterPolicy">
-              <Link to='/' className="textLink"> Aviso legal</Link>
-              <Link  to='/' className="textLink ml-2"> -Política de privacidad</Link>
-              <Link to='/' className="textLink ml-2"> -Condiciones de contratación</Link>
+              <Link to='/legal' className="textLink"> Aviso legal</Link>
+              <Link  to='/policy' className="textLink ml-2"> -Política de privacidad</Link>
+              <Link to='/contraction' className="textLink ml-2"> -Condiciones de contratación</Link>
             </div>
           </WebsiteRights>
           <WebsiteRights>© 2020, Planet Crossfit.</WebsiteRights>

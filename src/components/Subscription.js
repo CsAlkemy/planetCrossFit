@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Button } from "../globalStyles";
 
 import "./style.scss";
@@ -20,10 +19,10 @@ const Subs = (props) => (
       <FormCheckBox className="checkbox field">
         <input type="checkbox" className='is-checkradio' required />
         &nbsp; Acepto la{" "}
-        <Link to="/" className="linkText">
+        <a href="/policy" target='_blank' className="linkText">
           {" "}
           Política de privacidad
-        </Link>
+        </a>
       </FormCheckBox>
       <FormInput
         name="email"
