@@ -1,7 +1,7 @@
 import React from "react";
 import { GiCrystalBars } from "react-icons/gi";
 import { GiCutDiamond, GiRock } from "react-icons/gi";
-import { CgGym} from "react-icons/cg";
+import { FaBicycle} from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import {
   PricingSection,
@@ -28,7 +28,7 @@ function PricingOne() {
             <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <CgGym />
+                  <FaBicycle />
                 </PricingCardIcon>
                 <PricingCardPlan>CROSSFIT</PricingCardPlan>
                 <p className="subtitle has-text-white has-text-centered"> 2 Clases Semanales</p>
