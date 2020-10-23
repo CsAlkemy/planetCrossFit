@@ -1,10 +1,10 @@
 import React from "react";
 import { GiCrystalBars } from "react-icons/gi";
 import { GiCutDiamond, GiRock } from "react-icons/gi";
-import { CgGym} from "react-icons/cg";
+import { FaBicycle} from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import {
-    PricingSection,
+  PricingSection,
   PricingWrapper,
   PricingHeading,
   PricingContainer,
@@ -28,7 +28,7 @@ function PricingThree() {
             <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <CgGym />
+                  <FaBicycle />
                 </PricingCardIcon>
                 <PricingCardPlan>FUERZAS DEL ESTADO</PricingCardPlan>
                 <PricingCardCost>10%</PricingCardCost>
